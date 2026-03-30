@@ -1,0 +1,25 @@
+{
+  "name": "jsfl-lsp",
+  "version": "0.1.0",
+  "description": "Scaffold for a JSFL language server project",
+  "license": "MIT",
+  "main": "dist/server.js",
+  "bin": {
+    "jsfl-language-server": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "dev": "tsx src/server.ts --stdio",
+    "start": "node dist/server.js --stdio",
+    "tsls": "typescript-language-server --stdio"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3",
+    "typescript-language-server": "^5.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.5"
+  }
+}
