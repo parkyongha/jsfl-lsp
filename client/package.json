@@ -1,0 +1,44 @@
+{
+  "name": "jsfl-lsp-client",
+  "displayName": "JSFL LSP Client",
+  "description": "Temporary VS Code client for local jsfl-lsp development",
+  "version": "0.0.1",
+  "private": true,
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:jsfl"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "jsfl",
+        "aliases": [
+          "JSFL",
+          "jsfl"
+        ],
+        "extensions": [
+          ".jsfl"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "watch": "tsc -w -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.9.3"
+  }
+}
