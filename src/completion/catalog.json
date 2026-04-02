@@ -1,0 +1,2715 @@
+{
+  "globals": [
+    {
+      "name": "const",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "블록 스코프 상수를 선언합니다."
+    },
+    {
+      "name": "let",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "블록 스코프 변수를 선언합니다."
+    },
+    {
+      "name": "var",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "함수 스코프 변수를 선언합니다."
+    },
+    {
+      "name": "function",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "함수를 선언합니다."
+    },
+    {
+      "name": "return",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "함수 실행 결과를 반환합니다."
+    },
+    {
+      "name": "if",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "조건 분기를 시작합니다."
+    },
+    {
+      "name": "else",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "if 조건이 거짓일 때 실행할 분기입니다."
+    },
+    {
+      "name": "for",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "반복문을 시작합니다."
+    },
+    {
+      "name": "while",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "조건 반복문을 시작합니다."
+    },
+    {
+      "name": "switch",
+      "kind": "Keyword",
+      "detail": "JavaScript keyword",
+      "documentation": "여러 분기 조건을 처리합니다."
+    },
+    {
+      "name": "Array",
+      "kind": "Class",
+      "detail": "JavaScript global",
+      "documentation": "배열 생성자입니다."
+    },
+    {
+      "name": "Object",
+      "kind": "Class",
+      "detail": "JavaScript global",
+      "documentation": "객체 생성자입니다."
+    },
+    {
+      "name": "String",
+      "kind": "Class",
+      "detail": "JavaScript global",
+      "documentation": "문자열 생성자입니다."
+    },
+    {
+      "name": "Number",
+      "kind": "Class",
+      "detail": "JavaScript global",
+      "documentation": "숫자 생성자입니다."
+    },
+    {
+      "name": "Boolean",
+      "kind": "Class",
+      "detail": "JavaScript global",
+      "documentation": "불리언 생성자입니다."
+    },
+    {
+      "name": "fl",
+      "kind": "Variable",
+      "typeName": "Application",
+      "detail": "JSFL global",
+      "documentation": "Animate/Flash 애플리케이션 전역 객체입니다."
+    },
+    {
+      "name": "FLfile",
+      "kind": "Module",
+      "typeName": "FileModule",
+      "detail": "JSFL global",
+      "documentation": "파일 관련 JSFL API 모듈입니다."
+    },
+    {
+      "name": "MMExecute",
+      "kind": "Function",
+      "detail": "MMExecute(script)",
+      "documentation": "호스트 환경에서 스크립트를 실행합니다.",
+      "insertText": "MMExecute()"
+    }
+  ],
+  "types": [
+    {
+      "name": "Application",
+      "members": [
+        {
+          "name": "getSwfPanel",
+          "kind": "Method",
+          "detail": "getSwfPanel()",
+          "documentation": "Returns the SWFPanel object based on the panel's localized name or its SWF filename.",
+          "insertText": "getSwfPanel()"
+        },
+        {
+          "name": "getThemeColor",
+          "kind": "Method",
+          "detail": "getThemeColor()",
+          "documentation": "Retrieves a theme color that matches the parameter specified theme parameter name.",
+          "insertText": "getThemeColor()"
+        },
+        {
+          "name": "getThemeColorParameters",
+          "kind": "Method",
+          "detail": "getThemeColorParameters()",
+          "documentation": "Retrieves an array of theme parameter names.",
+          "insertText": "getThemeColorParameters()"
+        },
+        {
+          "name": "getThemeFontInfo",
+          "kind": "Method",
+          "detail": "getThemeFontInfo()",
+          "documentation": "Return either the font style or the font size that is used to draw the UI of the specified size.",
+          "insertText": "getThemeFontInfo()"
+        },
+        {
+          "name": "isFontInstalled",
+          "kind": "Method",
+          "detail": "isFontInstalled()",
+          "documentation": "Determines whether a specified font is installed.",
+          "insertText": "isFontInstalled()"
+        },
+        {
+          "name": "mapPlayerURL",
+          "kind": "Method",
+          "detail": "mapPlayerURL()",
+          "documentation": "Maps an escaped Unicode URL to a UTF-8 or MBCS URL.",
+          "insertText": "mapPlayerURL()"
+        },
+        {
+          "name": "openDocument",
+          "kind": "Method",
+          "detail": "openDocument()",
+          "documentation": "Opens a Flash (FLA) document for editing in a new Flash Document window and gives it focus.",
+          "insertText": "openDocument()",
+          "returnType": "Document"
+        },
+        {
+          "name": "openScript",
+          "kind": "Method",
+          "detail": "openScript()",
+          "documentation": "Opens a script (JSFL, AS, ASC) or other file (XML, TXT) in the Flash text editor.",
+          "insertText": "openScript()"
+        },
+        {
+          "name": "quit",
+          "kind": "Method",
+          "detail": "quit()",
+          "documentation": "Quits Flash, prompting the user to save any changed documents.",
+          "insertText": "quit()"
+        },
+        {
+          "name": "reloadEffects",
+          "kind": "Method",
+          "detail": "reloadEffects()",
+          "documentation": "Dropped in Adobe Animate.",
+          "insertText": "reloadEffects()"
+        },
+        {
+          "name": "reloadTools",
+          "kind": "Method",
+          "detail": "reloadTools()",
+          "documentation": "Rebuilds the Tools panel from the toolconfig.xml file.",
+          "insertText": "reloadTools()"
+        },
+        {
+          "name": "removeEventListener",
+          "kind": "Method",
+          "detail": "removeEventListener()",
+          "documentation": "Unregisters a function that was registered using fl.addEventListener().",
+          "insertText": "removeEventListener()"
+        },
+        {
+          "name": "resetAS3PackagePaths",
+          "kind": "Method",
+          "detail": "resetAS3PackagePaths()",
+          "documentation": "Resets the global Classpath setting in the ActionScript 3.0 Settings dialog box to the default value.",
+          "insertText": "resetAS3PackagePaths()"
+        },
+        {
+          "name": "resetPackagePaths",
+          "kind": "Method",
+          "detail": "resetPackagePaths()",
+          "documentation": "Dropped in Adobe Animate.",
+          "insertText": "resetPackagePaths()"
+        },
+        {
+          "name": "runScript",
+          "kind": "Method",
+          "detail": "runScript()",
+          "documentation": "Executes a JavaScript file.",
+          "insertText": "runScript()"
+        },
+        {
+          "name": "saveAll",
+          "kind": "Method",
+          "detail": "saveAll()",
+          "documentation": "Saves all open documents, displaying the Save As dialog box for any documents that were not previously saved.",
+          "insertText": "saveAll()"
+        },
+        {
+          "name": "saveDocument",
+          "kind": "Method",
+          "detail": "saveDocument()",
+          "documentation": "Saves the specified document as a FLA document.",
+          "insertText": "saveDocument()"
+        },
+        {
+          "name": "saveDocumentAs",
+          "kind": "Method",
+          "detail": "saveDocumentAs()",
+          "documentation": "Displays the Save As dialog box for the specified document.",
+          "insertText": "saveDocumentAs()"
+        },
+        {
+          "name": "selectElement",
+          "kind": "Method",
+          "detail": "selectElement()",
+          "documentation": "Enables selection or editing of an element.",
+          "insertText": "selectElement()"
+        },
+        {
+          "name": "selectTool",
+          "kind": "Method",
+          "detail": "selectTool()",
+          "documentation": "Selects the specified tool in the Tools panel.",
+          "insertText": "selectTool()"
+        },
+        {
+          "name": "setActiveWindow",
+          "kind": "Method",
+          "detail": "setActiveWindow()",
+          "documentation": "Sets the active window to be the specified document.",
+          "insertText": "setActiveWindow()"
+        },
+        {
+          "name": "setPrefBoolean",
+          "kind": "Method",
+          "detail": "setPrefBoolean()",
+          "documentation": "Sets a boolean preference value.",
+          "insertText": "setPrefBoolean()"
+        },
+        {
+          "name": "showIdleMessage",
+          "kind": "Method",
+          "detail": "showIdleMessage()",
+          "documentation": "Lets you disable the warning about a script running too long.",
+          "insertText": "showIdleMessage()"
+        },
+        {
+          "name": "toggleBreakpoint",
+          "kind": "Method",
+          "detail": "toggleBreakpoint()",
+          "documentation": "Toggles a breakpoint for the given .as file at the given line.",
+          "insertText": "toggleBreakpoint()"
+        },
+        {
+          "name": "trace",
+          "kind": "Method",
+          "detail": "trace()",
+          "documentation": "Sends a text string to the Output panel.",
+          "insertText": "trace()"
+        },
+        {
+          "name": "xmlPanel",
+          "kind": "Method",
+          "detail": "xmlPanel()",
+          "documentation": "Launches the XML To UI dialog from a URI that points to an XML-format file.",
+          "insertText": "xmlPanel()"
+        },
+        {
+          "name": "xmlPanelFromString",
+          "kind": "Method",
+          "detail": "xmlPanelFromString()",
+          "documentation": "Launches the XML To UI dialog from an XML-format string.",
+          "insertText": "xmlPanelFromString()"
+        },
+        {
+          "name": "addEventListener",
+          "kind": "Method",
+          "detail": "addEventListener()",
+          "documentation": "Registers a function to be called when a specific event is received.",
+          "insertText": "addEventListener()"
+        },
+        {
+          "name": "addToolInToolbar",
+          "kind": "Method",
+          "detail": "addToolInToolbar()",
+          "documentation": "Add the specified tool from master toolbar to main toolbar, appends in the last.",
+          "insertText": "addToolInToolbar()"
+        },
+        {
+          "name": "browseForFileURL",
+          "kind": "Method",
+          "detail": "browseForFileURL()",
+          "documentation": "Opens a File Open or File Save system dialog box and lets the user specify a file to be opened or saved.",
+          "insertText": "browseForFileURL()"
+        },
+        {
+          "name": "browseForFolderURL",
+          "kind": "Method",
+          "detail": "browseForFolderURL()",
+          "documentation": "Displays a Browse for Folder dialog box and lets the user select a folder.",
+          "insertText": "browseForFolderURL()"
+        },
+        {
+          "name": "clearPublishCache",
+          "kind": "Method",
+          "detail": "clearPublishCache()",
+          "documentation": "Clears the publish cache.",
+          "insertText": "clearPublishCache()"
+        },
+        {
+          "name": "clipCopyString",
+          "kind": "Method",
+          "detail": "clipCopyString()",
+          "documentation": "Copies the specified string to the Clipboard.",
+          "insertText": "clipCopyString()"
+        },
+        {
+          "name": "closeAll",
+          "kind": "Method",
+          "detail": "closeAll()",
+          "documentation": "Closes all open documents, displaying the Save As dialog box for any documents that were not previously saved.",
+          "insertText": "closeAll()"
+        },
+        {
+          "name": "closeAllPlayerDocuments",
+          "kind": "Method",
+          "detail": "closeAllPlayerDocuments()",
+          "documentation": "Closes all the SWF files that were opened with Control > Test Movie.",
+          "insertText": "closeAllPlayerDocuments()"
+        },
+        {
+          "name": "closeDocument",
+          "kind": "Method",
+          "detail": "closeDocument()",
+          "documentation": "Closes the specified document.",
+          "insertText": "closeDocument()"
+        },
+        {
+          "name": "copyLibraryItem",
+          "kind": "Method",
+          "detail": "copyLibraryItem()",
+          "documentation": "Silently copies a library item from a document without exposing the item in the Flash Pro user interface.",
+          "insertText": "copyLibraryItem()"
+        },
+        {
+          "name": "createDocument",
+          "kind": "Method",
+          "detail": "createDocument()",
+          "documentation": "Opens a new document and selects it.",
+          "insertText": "createDocument()",
+          "returnType": "Document"
+        },
+        {
+          "name": "exportPublishProfileString",
+          "kind": "Method",
+          "detail": "exportPublishProfileString()",
+          "documentation": "Uniform Resource Identifier (URI) from which to export publish settings.",
+          "insertText": "exportPublishProfileString()"
+        },
+        {
+          "name": "fileExists",
+          "kind": "Method",
+          "detail": "fileExists()",
+          "documentation": "Checks whether a file already exists on disk.",
+          "insertText": "fileExists()"
+        },
+        {
+          "name": "findDocumentDOM",
+          "kind": "Method",
+          "detail": "findDocumentDOM()",
+          "documentation": "Lets you target a specific file by using its unique identifier.",
+          "insertText": "findDocumentDOM()",
+          "returnType": "Document"
+        },
+        {
+          "name": "findDocumentIndex",
+          "kind": "Method",
+          "detail": "findDocumentIndex()",
+          "documentation": "Returns an array of integers that represent the position of a document in the fl.documents array.",
+          "insertText": "findDocumentIndex()"
+        },
+        {
+          "name": "findObjectInDocByName",
+          "kind": "Method",
+          "detail": "findObjectInDocByName()",
+          "documentation": "Exposes elements with instance names that match specified text.",
+          "insertText": "findObjectInDocByName()"
+        },
+        {
+          "name": "findObjectInDocByType",
+          "kind": "Method",
+          "detail": "findObjectInDocByType()",
+          "documentation": "Exposes elements of a specified element type in a document.",
+          "insertText": "findObjectInDocByType()"
+        },
+        {
+          "name": "getAppMemoryInfo",
+          "kind": "Method",
+          "detail": "getAppMemoryInfo()",
+          "documentation": "Returns an integer that represents the number of bytes being used in a specified area of Flash.exe memory.",
+          "insertText": "getAppMemoryInfo()"
+        },
+        {
+          "name": "getDocumentDOM",
+          "kind": "Method",
+          "detail": "getDocumentDOM()",
+          "documentation": "Retrieves the DOM ([Document object](../Document_object/document_summary.md)) of the currently active document.",
+          "insertText": "getDocumentDOM()",
+          "returnType": "Document"
+        },
+        {
+          "name": "actionsPanel",
+          "kind": "Property",
+          "detail": "actionsPanel",
+          "documentation": "Read-only; an [actionsPanel object](../actionsPanel_object/actionsPanel_summary.md)."
+        },
+        {
+          "name": "as3PackagePaths",
+          "kind": "Property",
+          "detail": "as3PackagePaths",
+          "documentation": "A string that corresponds to the global Classpath setting in the ActionScript 3.0 Settings dialog box."
+        },
+        {
+          "name": "compilerErrors",
+          "kind": "Property",
+          "detail": "compilerErrors",
+          "documentation": "Read-only; a [compilerErrors object](../compilerErrors_object/compilerErrors_summary.md)."
+        },
+        {
+          "name": "componentsPanel",
+          "kind": "Property",
+          "detail": "componentsPanel",
+          "documentation": "Read-only; a [componentsPanel object](../componentsPanel_object/componentsPanel_summary.md), which represents the Components panel."
+        },
+        {
+          "name": "configDirectory",
+          "kind": "Property",
+          "detail": "configDirectory",
+          "documentation": "Read-only; a string that specifies the full path for the local user’s Configuration folder as a platform-specific path."
+        },
+        {
+          "name": "configURI",
+          "kind": "Property",
+          "detail": "configURI",
+          "documentation": "Read-only; a string that specifies the full path for the local user’s Configuration directory as a file:/// URI."
+        },
+        {
+          "name": "contactSensitiveSelection",
+          "kind": "Property",
+          "detail": "contactSensitiveSelection",
+          "documentation": "A Boolean value that specifies whether Contact Sensitive selection mode is enabled."
+        },
+        {
+          "name": "createNewDocList",
+          "kind": "Property",
+          "detail": "createNewDocList",
+          "documentation": "Read-only; an array of strings that represent the various types of documents that can be created."
+        },
+        {
+          "name": "createNewDocListType",
+          "kind": "Property",
+          "detail": "createNewDocListType",
+          "documentation": "Read-only; an array of strings that represent the file extensions of the types of documents that can be created."
+        },
+        {
+          "name": "createNewTemplateList",
+          "kind": "Property",
+          "detail": "createNewTemplateList",
+          "documentation": "Read-only; an array of strings that represent the various types of templates that can be created."
+        },
+        {
+          "name": "documents",
+          "kind": "Property",
+          "detail": "documents",
+          "documentation": "Read-only; an array of Document objects (see [Document object](../Document_object/document_summary.md)) that represent the documents (FLA files) that are currently open for editing."
+        },
+        {
+          "name": "drawingLayer",
+          "kind": "Property",
+          "detail": "drawingLayer",
+          "documentation": "The drawingLayer object that an extensible tool should use when the user wants to temporarily draw while dragging."
+        },
+        {
+          "name": "externalLibraryPath",
+          "kind": "Property",
+          "detail": "externalLibraryPath",
+          "documentation": "A string that contains a list of items in the global ActionScript 3.0 External library path, which specifies the location of SWC files used as runtime shared libraries."
+        },
+        {
+          "name": "flexSDKPath",
+          "kind": "Property",
+          "detail": "flexSDKPath",
+          "documentation": "A string that specifies the path to the Flex SDK folder, which contains bin, frameworks, lib, and other folders."
+        },
+        {
+          "name": "installedPlayers",
+          "kind": "Property",
+          "detail": "installedPlayers",
+          "documentation": "Returns an array of generic objects corresponding to the list of installed Flash Players in the document Property inspector."
+        },
+        {
+          "name": "languageCode",
+          "kind": "Property",
+          "detail": "languageCode",
+          "documentation": "Returns the five character code identifying the locale of the application’s user interface."
+        },
+        {
+          "name": "libraryPath",
+          "kind": "Property",
+          "detail": "libraryPath",
+          "documentation": "A string that contains a list of items in the global ActionScript 3.0 Library path, which specifies the location of SWC files or folders containing SWC files."
+        },
+        {
+          "name": "Math",
+          "kind": "Property",
+          "detail": "Math",
+          "documentation": "Read-only; the [Math object](../Math_object/Math_summary.md), which provides methods for matrix and point operations."
+        },
+        {
+          "name": "mruRecentFileList",
+          "kind": "Property",
+          "detail": "mruRecentFileList",
+          "documentation": "Read-only; an array of the complete filenames in the Most Recently Used (MRU) list that the Flash authoring tool manages."
+        },
+        {
+          "name": "mruRecentFileListType",
+          "kind": "Property",
+          "detail": "mruRecentFileListType",
+          "documentation": "Read-only; an array of the file types in the MRU list that the Flash authoring tool manages."
+        },
+        {
+          "name": "packagePaths",
+          "kind": "Property",
+          "detail": "packagePaths",
+          "documentation": "Dropped in Adobe Animate."
+        },
+        {
+          "name": "publishCacheDiskSizeMax",
+          "kind": "Property",
+          "detail": "publishCacheDiskSizeMax",
+          "documentation": "An integer that sets the disk cache size limit preference."
+        },
+        {
+          "name": "publishCacheEnabled",
+          "kind": "Property",
+          "detail": "publishCacheEnabled",
+          "documentation": "A boolean value that sets whether publish cache is enabled."
+        },
+        {
+          "name": "publishCacheMemoryEntrySizeLimit",
+          "kind": "Property",
+          "detail": "publishCacheMemoryEntrySizeLimit",
+          "documentation": "An integer property that sets the maximum size for the memory cache entry preference."
+        },
+        {
+          "name": "publishCacheMemorySizeMax",
+          "kind": "Property",
+          "detail": "publishCacheMemorySizeMax",
+          "documentation": "An integer that sets the memory cache size limit preference."
+        },
+        {
+          "name": "objectDrawingMode",
+          "kind": "Property",
+          "detail": "objectDrawingMode",
+          "documentation": "An integer that represents the object drawing mode that is enabled."
+        },
+        {
+          "name": "outputPanel",
+          "kind": "Property",
+          "detail": "outputPanel",
+          "documentation": "Read-only; reference to the [outputPanel object](../outputPanel_object/outputPanel_summary.md)."
+        },
+        {
+          "name": "presetPanel",
+          "kind": "Property",
+          "detail": "presetPanel",
+          "documentation": "Read-only; a [presetPanel object](../presetPanel_object/presetPanel_summary.md)."
+        },
+        {
+          "name": "scriptURI",
+          "kind": "Property",
+          "detail": "scriptURI",
+          "documentation": "Read-only; a string that represents the path of the currently running JSFL script, expressed as a file:/// URI."
+        },
+        {
+          "name": "sourcePath",
+          "kind": "Property",
+          "detail": "sourcePath",
+          "documentation": "A string that contains a list of items in the global ActionScript 3.0 Source path, which specifies the location of ActionScript class files."
+        },
+        {
+          "name": "spriteSheetExporter",
+          "kind": "Property",
+          "detail": "spriteSheetExporter",
+          "documentation": "Returns an instance of SpriteSheetExporter object."
+        },
+        {
+          "name": "swfPanels",
+          "kind": "Property",
+          "detail": "swfPanels",
+          "documentation": "An array of registered swfPanel objects (see [swfPanel object](../swfPanel_object/swfPanel_summary.md))."
+        },
+        {
+          "name": "tools",
+          "kind": "Property",
+          "detail": "tools",
+          "documentation": "Read-only; an array of Tools objects."
+        },
+        {
+          "name": "version",
+          "kind": "Property",
+          "detail": "version",
+          "documentation": "Read-only; the long string version of the Flash authoring tool, including platform."
+        },
+        {
+          "name": "xmlui",
+          "kind": "Property",
+          "detail": "xmlui",
+          "documentation": "Read-only; an [XMLUI object](../XMLUI_object/xmlui_summary.md)."
+        }
+      ]
+    },
+    {
+      "name": "FileModule",
+      "members": [
+        {
+          "name": "copy",
+          "kind": "Method",
+          "detail": "copy()",
+          "documentation": "Copies a file.",
+          "insertText": "copy()"
+        },
+        {
+          "name": "createFolder",
+          "kind": "Method",
+          "detail": "createFolder()",
+          "documentation": "Creates one or more folders.",
+          "insertText": "createFolder()"
+        },
+        {
+          "name": "exists",
+          "kind": "Method",
+          "detail": "exists()",
+          "documentation": "Determines the existence of a file or folder.",
+          "insertText": "exists()"
+        },
+        {
+          "name": "getAttributes",
+          "kind": "Method",
+          "detail": "getAttributes()",
+          "documentation": "Finds out whether a file is writable, read-only, hidden, visible, or a system folder.",
+          "insertText": "getAttributes()"
+        },
+        {
+          "name": "getCreationDate",
+          "kind": "Method",
+          "detail": "getCreationDate()",
+          "documentation": "Specifies how many seconds have passed between January 1, 1970 and the time the file or folder was created.",
+          "insertText": "getCreationDate()"
+        },
+        {
+          "name": "getCreationDateObj",
+          "kind": "Method",
+          "detail": "getCreationDateObj()",
+          "documentation": "Gets the date a file or folder was created.",
+          "insertText": "getCreationDateObj()"
+        },
+        {
+          "name": "getModificationDate",
+          "kind": "Method",
+          "detail": "getModificationDate()",
+          "documentation": "Specifies how many seconds have passed between January 1, 1970 and the time the file or folder was last modified.",
+          "insertText": "getModificationDate()"
+        },
+        {
+          "name": "getModificationDateObj",
+          "kind": "Method",
+          "detail": "getModificationDateObj()",
+          "documentation": "Gets the date a file or folder was last modified.",
+          "insertText": "getModificationDateObj()"
+        },
+        {
+          "name": "getSize",
+          "kind": "Method",
+          "detail": "getSize()",
+          "documentation": "Gets the size of a file.",
+          "insertText": "getSize()"
+        },
+        {
+          "name": "listFolder",
+          "kind": "Method",
+          "detail": "listFolder()",
+          "documentation": "Lists the contents of a folder.",
+          "insertText": "listFolder()"
+        },
+        {
+          "name": "platformPathToURI",
+          "kind": "Method",
+          "detail": "platformPathToURI()",
+          "documentation": "Converts a filename in a platform-specific format to a file:/// URI.",
+          "insertText": "platformPathToURI()"
+        },
+        {
+          "name": "read",
+          "kind": "Method",
+          "detail": "read()",
+          "documentation": "Reads the contents of a file.",
+          "insertText": "read()"
+        },
+        {
+          "name": "remove",
+          "kind": "Method",
+          "detail": "remove()",
+          "documentation": "Deletes a file or folder.",
+          "insertText": "remove()"
+        },
+        {
+          "name": "setAttributes",
+          "kind": "Method",
+          "detail": "setAttributes()",
+          "documentation": "Makes a file or folder read-only, writable, hidden, or visible.",
+          "insertText": "setAttributes()"
+        },
+        {
+          "name": "uriToPlatformPath",
+          "kind": "Method",
+          "detail": "uriToPlatformPath()",
+          "documentation": "Converts a filename expressed as a file:/// URI to a platform- specific format.",
+          "insertText": "uriToPlatformPath()"
+        },
+        {
+          "name": "write",
+          "kind": "Method",
+          "detail": "write()",
+          "documentation": "Creates, writes to, or appends to a file.",
+          "insertText": "write()"
+        }
+      ]
+    },
+    {
+      "name": "Document",
+      "members": [
+        {
+          "name": "addDataToDocument",
+          "kind": "Method",
+          "detail": "addDataToDocument()",
+          "documentation": "Stores specified data with a document.",
+          "insertText": "addDataToDocument()"
+        },
+        {
+          "name": "addDataToSelection",
+          "kind": "Method",
+          "detail": "addDataToSelection()",
+          "documentation": "Stores specified data with the selected objects.",
+          "insertText": "addDataToSelection()"
+        },
+        {
+          "name": "addFilter",
+          "kind": "Method",
+          "detail": "addFilter()",
+          "documentation": "Applies a filter to the selected objects.",
+          "insertText": "addFilter()"
+        },
+        {
+          "name": "addItem",
+          "kind": "Method",
+          "detail": "addItem()",
+          "documentation": "Adds an item from any open document or library to the specified Document object.",
+          "insertText": "addItem()"
+        },
+        {
+          "name": "addNewLine",
+          "kind": "Method",
+          "detail": "addNewLine()",
+          "documentation": "Adds a new path between two points.",
+          "insertText": "addNewLine()"
+        },
+        {
+          "name": "addNewOval",
+          "kind": "Method",
+          "detail": "addNewOval()",
+          "documentation": "Adds a new Oval object in the specified bounding rectangle.",
+          "insertText": "addNewOval()"
+        },
+        {
+          "name": "addNewPrimitiveOval",
+          "kind": "Method",
+          "detail": "addNewPrimitiveOval()",
+          "documentation": "Adds a new oval primitive fitting into the specified bounds.",
+          "insertText": "addNewPrimitiveOval()"
+        },
+        {
+          "name": "addNewPrimitiveRectangle",
+          "kind": "Method",
+          "detail": "addNewPrimitiveRectangle()",
+          "documentation": "Adds a new rectangle primitive fitting into the specified bounds.",
+          "insertText": "addNewPrimitiveRectangle()"
+        },
+        {
+          "name": "addNewPublishProfile",
+          "kind": "Method",
+          "detail": "addNewPublishProfile()",
+          "documentation": "Adds a new publish profile and makes it the current one.",
+          "insertText": "addNewPublishProfile()"
+        },
+        {
+          "name": "addNewRectangle",
+          "kind": "Method",
+          "detail": "addNewRectangle()",
+          "documentation": "Adds a new rectangle or rounded rectangle, fitting it into the specified bounds.",
+          "insertText": "addNewRectangle()"
+        },
+        {
+          "name": "addNewScene",
+          "kind": "Method",
+          "detail": "addNewScene()",
+          "documentation": "Adds a new scene (Timeline object) as the next scene after the currently selected scene and makes the new scene the currently selected scene.",
+          "insertText": "addNewScene()"
+        },
+        {
+          "name": "addNewText",
+          "kind": "Method",
+          "detail": "addNewText()",
+          "documentation": "Inserts a new empty text field.",
+          "insertText": "addNewText()"
+        },
+        {
+          "name": "addTaggedSwatch",
+          "kind": "Method",
+          "detail": "addTaggedSwatch()",
+          "documentation": "To add new tagged swatch.",
+          "insertText": "addTaggedSwatch()"
+        },
+        {
+          "name": "addTaggedSwatchWithColor",
+          "kind": "Method",
+          "detail": "addTaggedSwatchWithColor()",
+          "documentation": "To add new tagged swatch with the given color string.",
+          "insertText": "addTaggedSwatchWithColor()"
+        },
+        {
+          "name": "align",
+          "kind": "Method",
+          "detail": "align()",
+          "documentation": "Aligns the selection.",
+          "insertText": "align()"
+        },
+        {
+          "name": "allowScreens",
+          "kind": "Method",
+          "detail": "allowScreens()",
+          "documentation": "Dropped in Adobe Animate.",
+          "insertText": "allowScreens()"
+        },
+        {
+          "name": "arrange",
+          "kind": "Method",
+          "detail": "arrange()",
+          "documentation": "Arranges the selection on the Stage.",
+          "insertText": "arrange()"
+        },
+        {
+          "name": "breakApart",
+          "kind": "Method",
+          "detail": "breakApart()",
+          "documentation": "Performs a break-apart operation on the current selection.",
+          "insertText": "breakApart()"
+        },
+        {
+          "name": "canEditSymbol",
+          "kind": "Method",
+          "detail": "canEditSymbol()",
+          "documentation": "Indicates whether the Edit Symbols menu and functionality are enabled.",
+          "insertText": "canEditSymbol()"
+        },
+        {
+          "name": "canRevert",
+          "kind": "Method",
+          "detail": "canRevert()",
+          "documentation": "Determines whether you can use the document.revert()fl.revertDocument()",
+          "insertText": "canRevert()"
+        },
+        {
+          "name": "canTestMovie",
+          "kind": "Method",
+          "detail": "canTestMovie()",
+          "documentation": "Determines whether you can use the document.testMovie()",
+          "insertText": "canTestMovie()"
+        },
+        {
+          "name": "canTestScene",
+          "kind": "Method",
+          "detail": "canTestScene()",
+          "documentation": "Determines whether you can use the document.testScene()",
+          "insertText": "canTestScene()"
+        },
+        {
+          "name": "changeFilterOrder",
+          "kind": "Method",
+          "detail": "changeFilterOrder()",
+          "documentation": "Changes the index of the filter in the Filters list.",
+          "insertText": "changeFilterOrder()"
+        },
+        {
+          "name": "clipCopy",
+          "kind": "Method",
+          "detail": "clipCopy()",
+          "documentation": "Copies the current selection from the document to the Clipboard.",
+          "insertText": "clipCopy()"
+        },
+        {
+          "name": "clipCut",
+          "kind": "Method",
+          "detail": "clipCut()",
+          "documentation": "Cuts the current selection from the document and writes it to the Clipboard.",
+          "insertText": "clipCut()"
+        },
+        {
+          "name": "clipPaste",
+          "kind": "Method",
+          "detail": "clipPaste()",
+          "documentation": "Pastes the contents of the Clipboard into the document.",
+          "insertText": "clipPaste()"
+        },
+        {
+          "name": "close",
+          "kind": "Method",
+          "detail": "close()",
+          "documentation": "Closes the specified document.",
+          "insertText": "close()"
+        },
+        {
+          "name": "convertLinesToFills",
+          "kind": "Method",
+          "detail": "convertLinesToFills()",
+          "documentation": "Converts lines to fills on the selected objects.",
+          "insertText": "convertLinesToFills()"
+        },
+        {
+          "name": "convertSelectionToBitmap",
+          "kind": "Method",
+          "detail": "convertSelectionToBitmap()",
+          "documentation": "Converts selected objects in the current frame to a bitmap and inserts the bitmap into the library.",
+          "insertText": "convertSelectionToBitmap()"
+        },
+        {
+          "name": "convertToDoc",
+          "kind": "Method",
+          "detail": "convertToDoc()",
+          "documentation": "Converts a document to expected document type.",
+          "insertText": "convertToDoc()"
+        },
+        {
+          "name": "convertToSymbol",
+          "kind": "Method",
+          "detail": "convertToSymbol()",
+          "documentation": "Converts the selected Stage items to a new symbol.",
+          "insertText": "convertToSymbol()"
+        },
+        {
+          "name": "crop",
+          "kind": "Method",
+          "detail": "crop()",
+          "documentation": "Uses the top selected drawing object to crop all selected drawing objects underneath it.",
+          "insertText": "crop()"
+        },
+        {
+          "name": "debugMovie",
+          "kind": "Method",
+          "detail": "debugMovie()",
+          "documentation": "Initiates a debug session with the document.",
+          "insertText": "debugMovie()"
+        },
+        {
+          "name": "deleteEnvelope",
+          "kind": "Method",
+          "detail": "deleteEnvelope()",
+          "documentation": "Deletes the envelope (bounding box that contains one or more objects) from the selected object.",
+          "insertText": "deleteEnvelope()"
+        },
+        {
+          "name": "deletePublishProfile",
+          "kind": "Method",
+          "detail": "deletePublishProfile()",
+          "documentation": "Deletes the currently active profile, if there is more than one.",
+          "insertText": "deletePublishProfile()"
+        },
+        {
+          "name": "deleteScene",
+          "kind": "Method",
+          "detail": "deleteScene()",
+          "documentation": "Deletes the current scene (Timeline object), and if the deleted scene was not the last one, sets the next scene as the current Timeline object.",
+          "insertText": "deleteScene()"
+        },
+        {
+          "name": "deleteSelection",
+          "kind": "Method",
+          "detail": "deleteSelection()",
+          "documentation": "Deletes the current selection on the Stage.",
+          "insertText": "deleteSelection()"
+        },
+        {
+          "name": "deleteTaggedSwatchAtIndex",
+          "kind": "Method",
+          "detail": "deleteTaggedSwatchAtIndex()",
+          "documentation": "Deletes tagged swatch with given index.",
+          "insertText": "deleteTaggedSwatchAtIndex()"
+        },
+        {
+          "name": "deleteTaggedSwatchByName",
+          "kind": "Method",
+          "detail": "deleteTaggedSwatchByName()",
+          "documentation": "Deletes tagged swatch with given name.",
+          "insertText": "deleteTaggedSwatchByName()"
+        },
+        {
+          "name": "disableAllFilters",
+          "kind": "Method",
+          "detail": "disableAllFilters()",
+          "documentation": "Disables all filters on the selected objects.",
+          "insertText": "disableAllFilters()"
+        },
+        {
+          "name": "disableFilter",
+          "kind": "Method",
+          "detail": "disableFilter()",
+          "documentation": "Disables the specified filter in the Filters list.",
+          "insertText": "disableFilter()"
+        },
+        {
+          "name": "disableOtherFilters",
+          "kind": "Method",
+          "detail": "disableOtherFilters()",
+          "documentation": "Disables all filters except the one at the specified position in the Filters list.",
+          "insertText": "disableOtherFilters()"
+        },
+        {
+          "name": "distribute",
+          "kind": "Method",
+          "detail": "distribute()",
+          "documentation": "Distributes the selection.",
+          "insertText": "distribute()"
+        },
+        {
+          "name": "distributeToKeyframes",
+          "kind": "Method",
+          "detail": "distributeToKeyframes()",
+          "documentation": "Performs a distribute-to-keyframes operation on the current selection; equivalent to selecting Distriute to Keyframes.",
+          "insertText": "distributeToKeyframes()"
+        },
+        {
+          "name": "distributeToLayers",
+          "kind": "Method",
+          "detail": "distributeToLayers()",
+          "documentation": "Performs a distribute-to-layers operation on the current selection; equivalent to selecting Distribute to Layers.",
+          "insertText": "distributeToLayers()"
+        },
+        {
+          "name": "documentHasData",
+          "kind": "Method",
+          "detail": "documentHasData()",
+          "documentation": "Checks the document for persistent data with the specified name.",
+          "insertText": "documentHasData()"
+        },
+        {
+          "name": "duplicatePublishProfile",
+          "kind": "Method",
+          "detail": "duplicatePublishProfile()",
+          "documentation": "Duplicates the currently active profile and gives the duplicate version focus.",
+          "insertText": "duplicatePublishProfile()"
+        },
+        {
+          "name": "duplicateScene",
+          "kind": "Method",
+          "detail": "duplicateScene()",
+          "documentation": "Makes a copy of the currently selected scene, giving the new scene a unique name and making it the current scene.",
+          "insertText": "duplicateScene()"
+        },
+        {
+          "name": "duplicateSelection",
+          "kind": "Method",
+          "detail": "duplicateSelection()",
+          "documentation": "Duplicates the selection on the Stage.",
+          "insertText": "duplicateSelection()"
+        },
+        {
+          "name": "editScene",
+          "kind": "Method",
+          "detail": "editScene()",
+          "documentation": "Makes the specified scene the currently selected scene for editing.",
+          "insertText": "editScene()"
+        },
+        {
+          "name": "enableAllFilters",
+          "kind": "Method",
+          "detail": "enableAllFilters()",
+          "documentation": "Enables all the filters on the Filters list for the selected objects.",
+          "insertText": "enableAllFilters()"
+        },
+        {
+          "name": "enableFilter",
+          "kind": "Method",
+          "detail": "enableFilter()",
+          "documentation": "Enables the specified filter for the selected objects.",
+          "insertText": "enableFilter()"
+        },
+        {
+          "name": "enterEditMode",
+          "kind": "Method",
+          "detail": "enterEditMode()",
+          "documentation": "Switches the authoring tool into the editing mode specified by the parameter.",
+          "insertText": "enterEditMode()"
+        },
+        {
+          "name": "exitEditMode",
+          "kind": "Method",
+          "detail": "exitEditMode()",
+          "documentation": "Exits from symbol-editing mode and returns focus to the next level up from the editing mode.",
+          "insertText": "exitEditMode()"
+        },
+        {
+          "name": "exportCanvasPublishTemplate",
+          "kind": "Method",
+          "detail": "exportCanvasPublishTemplate()",
+          "documentation": "Exports the HTML5 Canvas Publishing Template for given document,at the specified location.",
+          "insertText": "exportCanvasPublishTemplate()"
+        },
+        {
+          "name": "exportInstanceToLibrary",
+          "kind": "Method",
+          "detail": "exportInstanceToLibrary()",
+          "documentation": "Export a selected movie clip, graphic, or button instance on the Stage to a new bitmap in the Library.",
+          "insertText": "exportInstanceToLibrary()"
+        },
+        {
+          "name": "exportMedia",
+          "kind": "Method",
+          "detail": "exportMedia()",
+          "documentation": "Generates the required media from the document.",
+          "insertText": "exportMedia()"
+        },
+        {
+          "name": "exportPNG",
+          "kind": "Method",
+          "detail": "exportPNG()",
+          "documentation": "Exports the document as one or more PNG files.",
+          "insertText": "exportPNG()"
+        },
+        {
+          "name": "exportPublishProfile",
+          "kind": "Method",
+          "detail": "exportPublishProfile()",
+          "documentation": "Exports the currently active profile to an XML file.",
+          "insertText": "exportPublishProfile()"
+        },
+        {
+          "name": "exportPublishProfileString",
+          "kind": "Method",
+          "detail": "exportPublishProfileString()",
+          "documentation": "Returns a string that specifies, in XML format, the specified profile.",
+          "insertText": "exportPublishProfileString()"
+        },
+        {
+          "name": "exportSVG",
+          "kind": "Method",
+          "detail": "exportSVG()",
+          "documentation": "Exports the document in SVG format.",
+          "insertText": "exportSVG()"
+        },
+        {
+          "name": "exportSWF",
+          "kind": "Method",
+          "detail": "exportSWF()",
+          "documentation": "Exports the document in the Flash SWF format.",
+          "insertText": "exportSWF()"
+        },
+        {
+          "name": "exportVideo",
+          "kind": "Method",
+          "detail": "exportVideo()",
+          "documentation": "Exports a video from the document and optionally sends it to Adobe Media Encoder to convert the video.",
+          "insertText": "exportVideo()"
+        },
+        {
+          "name": "getAlignToDocument",
+          "kind": "Method",
+          "detail": "getAlignToDocument()",
+          "documentation": "Identical to retrieving the value of the To Stage button in the Align panel.",
+          "insertText": "getAlignToDocument()"
+        },
+        {
+          "name": "getBlendMode",
+          "kind": "Method",
+          "detail": "getBlendMode()",
+          "documentation": "Returns a string that specifies the blending mode for the selected objects.",
+          "insertText": "getBlendMode()"
+        },
+        {
+          "name": "getCustomFill",
+          "kind": "Method",
+          "detail": "getCustomFill()",
+          "documentation": "Retrieves the fill object of the selected shape, or the Tools panel and Property inspector if specified.",
+          "insertText": "getCustomFill()"
+        },
+        {
+          "name": "getCustomStroke",
+          "kind": "Method",
+          "detail": "getCustomStroke()",
+          "documentation": "Returns the stroke object of the selected shape, or the Tools panel and Property inspector if specified.",
+          "insertText": "getCustomStroke()"
+        },
+        {
+          "name": "getDataFromDocument",
+          "kind": "Method",
+          "detail": "getDataFromDocument()",
+          "documentation": "Retrieves the value of the specified data.",
+          "insertText": "getDataFromDocument()"
+        },
+        {
+          "name": "getElementProperty",
+          "kind": "Method",
+          "detail": "getElementProperty()",
+          "documentation": "Gets the specified Element property for the current selection.",
+          "insertText": "getElementProperty()"
+        },
+        {
+          "name": "getElementTextAttr",
+          "kind": "Method",
+          "detail": "getElementTextAttr()",
+          "documentation": "Gets a specified TextAttrs property of the selected Text objects.",
+          "insertText": "getElementTextAttr()"
+        },
+        {
+          "name": "getFilters",
+          "kind": "Method",
+          "detail": "getFilters()",
+          "documentation": "Returns an array that contains the list of filters applied to the currently selected objects.",
+          "insertText": "getFilters()"
+        },
+        {
+          "name": "getIndexForTaggedSwatchesPalette",
+          "kind": "Method",
+          "detail": "getIndexForTaggedSwatchesPalette()",
+          "documentation": "To get the Tagged Swatches palette index for given palette name.",
+          "insertText": "getIndexForTaggedSwatchesPalette()"
+        },
+        {
+          "name": "getMetadata",
+          "kind": "Method",
+          "detail": "getMetadata()",
+          "documentation": "Returns a string containing the XML metadata associated with the document.",
+          "insertText": "getMetadata()"
+        },
+        {
+          "name": "getMobileSettings",
+          "kind": "Method",
+          "detail": "getMobileSettings()",
+          "documentation": "Returns the string passed to document.setMobileSettings().",
+          "insertText": "getMobileSettings()"
+        },
+        {
+          "name": "getPlayerVersion",
+          "kind": "Method",
+          "detail": "getPlayerVersion()",
+          "documentation": "Returns a string that represents the targeted player version for the specified document.",
+          "insertText": "getPlayerVersion()"
+        },
+        {
+          "name": "getPublishDocumentData",
+          "kind": "Method",
+          "detail": "getPublishDocumentData()",
+          "documentation": "Indicates whether publishing of the specified persistent data is enabled for the specified format in the document.",
+          "insertText": "getPublishDocumentData()"
+        },
+        {
+          "name": "getSelectionRect",
+          "kind": "Method",
+          "detail": "getSelectionRect()",
+          "documentation": "Gets the bounding rectangle of the current selection.",
+          "insertText": "getSelectionRect()"
+        },
+        {
+          "name": "getSWFPathFromProfile",
+          "kind": "Method",
+          "detail": "getSWFPathFromProfile()",
+          "documentation": "Gets the full path to the SWF file that is set in the current Publish profile.",
+          "insertText": "getSWFPathFromProfile()"
+        },
+        {
+          "name": "getTaggedSwatchAtIndex",
+          "kind": "Method",
+          "detail": "getTaggedSwatchAtIndex()",
+          "documentation": "Returns the Tagged Swatch with the given index.",
+          "insertText": "getTaggedSwatchAtIndex()"
+        },
+        {
+          "name": "getTaggedSwatchByName",
+          "kind": "Method",
+          "detail": "getTaggedSwatchByName()",
+          "documentation": "Returns the Tagged Swatch with the given name.",
+          "insertText": "getTaggedSwatchByName()"
+        },
+        {
+          "name": "getTaggedSwatches",
+          "kind": "Method",
+          "detail": "getTaggedSwatches()",
+          "documentation": "Returns array of tagged swatch objects.",
+          "insertText": "getTaggedSwatches()"
+        },
+        {
+          "name": "getTaggedSwatchesPaletteList",
+          "kind": "Method",
+          "detail": "getTaggedSwatchesPaletteList()",
+          "documentation": "To get the array of Tagged Swatches palette name list.",
+          "insertText": "getTaggedSwatchesPaletteList()"
+        },
+        {
+          "name": "getTelemetryForSwf",
+          "kind": "Method",
+          "detail": "getTelemetryForSwf()",
+          "documentation": "Indicates whether the \"Enable detailed telemetry\" checkbox is selected in the Publish Settings dialog.",
+          "insertText": "getTelemetryForSwf()"
+        },
+        {
+          "name": "getTextString",
+          "kind": "Method",
+          "detail": "getTextString()",
+          "documentation": "Gets the currently selected text.",
+          "insertText": "getTextString()"
+        },
+        {
+          "name": "getTimeline",
+          "kind": "Method",
+          "detail": "getTimeline()",
+          "documentation": "Retrieves the current Timeline object in the document.",
+          "insertText": "getTimeline()",
+          "returnType": "Timeline"
+        },
+        {
+          "name": "getTransformationPoint",
+          "kind": "Method",
+          "detail": "getTransformationPoint()",
+          "documentation": "Gets the location of the transformation point of the current selection.",
+          "insertText": "getTransformationPoint()"
+        },
+        {
+          "name": "group",
+          "kind": "Method",
+          "detail": "group()",
+          "documentation": "Converts the current selection to a group.",
+          "insertText": "group()"
+        },
+        {
+          "name": "importCanvasPublishTemplate",
+          "kind": "Method",
+          "detail": "importCanvasPublishTemplate()",
+          "documentation": "Imports and sets the HTML5 Canvas Publishing Template for given document, from the specified location pathURI.",
+          "insertText": "importCanvasPublishTemplate()"
+        },
+        {
+          "name": "importFile",
+          "kind": "Method",
+          "detail": "importFile()",
+          "documentation": "Imports a file into the document.",
+          "insertText": "importFile()"
+        },
+        {
+          "name": "importPublishProfile",
+          "kind": "Method",
+          "detail": "importPublishProfile()",
+          "documentation": "Imports a profile from a file.",
+          "insertText": "importPublishProfile()"
+        },
+        {
+          "name": "importPublishProfileString",
+          "kind": "Method",
+          "detail": "importPublishProfileString()",
+          "documentation": "Imports an XML string that represents a publish profile and sets it as the current profile.",
+          "insertText": "importPublishProfileString()"
+        },
+        {
+          "name": "importSWF",
+          "kind": "Method",
+          "detail": "importSWF()",
+          "documentation": "Dropped in Adobe Animate.",
+          "insertText": "importSWF()"
+        },
+        {
+          "name": "intersect",
+          "kind": "Method",
+          "detail": "intersect()",
+          "documentation": "Creates an intersection drawing object from all selected drawing objects.",
+          "insertText": "intersect()"
+        },
+        {
+          "name": "loadCuepointXML",
+          "kind": "Method",
+          "detail": "loadCuepointXML()",
+          "documentation": "Dropped in Adobe Animate.",
+          "insertText": "loadCuepointXML()"
+        },
+        {
+          "name": "match",
+          "kind": "Method",
+          "detail": "match()",
+          "documentation": "Makes the size of the selected objects the same.",
+          "insertText": "match()"
+        },
+        {
+          "name": "mouseClick",
+          "kind": "Method",
+          "detail": "mouseClick()",
+          "documentation": "Performs a mouse click from the Selection tool.",
+          "insertText": "mouseClick()"
+        },
+        {
+          "name": "mouseDblClk",
+          "kind": "Method",
+          "detail": "mouseDblClk()",
+          "documentation": "Performs a double mouse click from the Selection tool.",
+          "insertText": "mouseDblClk()"
+        },
+        {
+          "name": "moveSelectedBezierPointsBy",
+          "kind": "Method",
+          "detail": "moveSelectedBezierPointsBy()",
+          "documentation": "If the selection contains at least one path with at least one Bézier point selected, this method moves all selected Bézier points on all selected paths by the specified amount.",
+          "insertText": "moveSelectedBezierPointsBy()"
+        },
+        {
+          "name": "moveSelectionBy",
+          "kind": "Method",
+          "detail": "moveSelectionBy()",
+          "documentation": "Moves selected objects by a specified distance.",
+          "insertText": "moveSelectionBy()"
+        },
+        {
+          "name": "optimizeCurves",
+          "kind": "Method",
+          "detail": "optimizeCurves()",
+          "documentation": "Optimizes smoothing for the current selection, allowing multiple passes, if specified, for optimal smoothing; equivalent to selecting Modify >Shape >Optimize.",
+          "insertText": "optimizeCurves()"
+        },
+        {
+          "name": "publish",
+          "kind": "Method",
+          "detail": "publish()",
+          "documentation": "Publishes the document according to the active publish settings (File >Publish Settings); equivalent to selecting File >Publish.",
+          "insertText": "publish()"
+        },
+        {
+          "name": "punch",
+          "kind": "Method",
+          "detail": "punch()",
+          "documentation": "Uses the top selected drawing object to punch through all selected drawing objects underneath it.",
+          "insertText": "punch()"
+        },
+        {
+          "name": "removeAllFilters",
+          "kind": "Method",
+          "detail": "removeAllFilters()",
+          "documentation": "Removes all filters from the selected objects.",
+          "insertText": "removeAllFilters()"
+        },
+        {
+          "name": "removeDataFromDocument",
+          "kind": "Method",
+          "detail": "removeDataFromDocument()",
+          "documentation": "Removes persistent data with the specified name that has been attached to the document.",
+          "insertText": "removeDataFromDocument()"
+        },
+        {
+          "name": "removeDataFromSelection",
+          "kind": "Method",
+          "detail": "removeDataFromSelection()",
+          "documentation": "Removes persistent data with the specified name that has been attached to the selection.",
+          "insertText": "removeDataFromSelection()"
+        },
+        {
+          "name": "removeFilter",
+          "kind": "Method",
+          "detail": "removeFilter()",
+          "documentation": "Removes the specified filter from the Filters list of the selected objects.",
+          "insertText": "removeFilter()"
+        },
+        {
+          "name": "renamePublishProfile",
+          "kind": "Method",
+          "detail": "renamePublishProfile()",
+          "documentation": "Renames the current profile.",
+          "insertText": "renamePublishProfile()"
+        },
+        {
+          "name": "renameScene",
+          "kind": "Method",
+          "detail": "renameScene()",
+          "documentation": "Renames the currently selected scene in the Scenes panel.",
+          "insertText": "renameScene()"
+        },
+        {
+          "name": "reorderScene",
+          "kind": "Method",
+          "detail": "reorderScene()",
+          "documentation": "Moves the specified scene before another specified scene.",
+          "insertText": "reorderScene()"
+        },
+        {
+          "name": "resetOvalObject",
+          "kind": "Method",
+          "detail": "resetOvalObject()",
+          "documentation": "Sets all values in the Property inspector to default Oval object settings.",
+          "insertText": "resetOvalObject()"
+        },
+        {
+          "name": "resetRectangleObject",
+          "kind": "Method",
+          "detail": "resetRectangleObject()",
+          "documentation": "Sets all values in the Property inspector to default Rectangle object settings.",
+          "insertText": "resetRectangleObject()"
+        },
+        {
+          "name": "resetTransformation",
+          "kind": "Method",
+          "detail": "resetTransformation()",
+          "documentation": "Resets the transformation matrix; equivalent to selecting Modify >Transform >Remove Transform.",
+          "insertText": "resetTransformation()"
+        },
+        {
+          "name": "revert",
+          "kind": "Method",
+          "detail": "revert()",
+          "documentation": "Reverts the specified document to its previously saved version; equivalent to selecting File >Revert.",
+          "insertText": "revert()"
+        },
+        {
+          "name": "rotate3DSelection",
+          "kind": "Method",
+          "detail": "rotate3DSelection()",
+          "documentation": "Applies a 3D rotation to the selection.",
+          "insertText": "rotate3DSelection()"
+        },
+        {
+          "name": "rotateSelection",
+          "kind": "Method",
+          "detail": "rotateSelection()",
+          "documentation": "Rotates the selection by a specified number of degrees.",
+          "insertText": "rotateSelection()"
+        },
+        {
+          "name": "save",
+          "kind": "Method",
+          "detail": "save()",
+          "documentation": "Saves the document in its default location; equivalent to selecting File >Save.",
+          "insertText": "save()"
+        },
+        {
+          "name": "saveAsCopy",
+          "kind": "Method",
+          "detail": "saveAsCopy()",
+          "documentation": "Saves a copy of the document to a specified location.",
+          "insertText": "saveAsCopy()"
+        },
+        {
+          "name": "saveAndCompact",
+          "kind": "Method",
+          "detail": "saveAndCompact()",
+          "documentation": "Dropped in Adobe Animate.",
+          "insertText": "saveAndCompact()"
+        },
+        {
+          "name": "scaleSelection",
+          "kind": "Method",
+          "detail": "scaleSelection()",
+          "documentation": "Scales the selection by a specified amount; equivalent to using the Free Transform tool to scale the object.",
+          "insertText": "scaleSelection()"
+        },
+        {
+          "name": "selectAll",
+          "kind": "Method",
+          "detail": "selectAll()",
+          "documentation": "Selects all items on the Stage; equivalent to pressing Control+A (Windows) or Command+A (Macintosh) or selecting Edit >Select All.",
+          "insertText": "selectAll()"
+        },
+        {
+          "name": "selectNone",
+          "kind": "Method",
+          "detail": "selectNone()",
+          "documentation": "Deselects any selected items.",
+          "insertText": "selectNone()"
+        },
+        {
+          "name": "setAlignToDocument",
+          "kind": "Method",
+          "detail": "setAlignToDocument()",
+          "documentation": "Sets the preferences for document.align(), document.distribute(), document.match(), and document.space() to act on the document; equivalent to enabling the To Stage button in the Align panel.",
+          "insertText": "setAlignToDocument()"
+        },
+        {
+          "name": "setBlendMode",
+          "kind": "Method",
+          "detail": "setBlendMode()",
+          "documentation": "Sets the blending mode for the selected objects.",
+          "insertText": "setBlendMode()"
+        },
+        {
+          "name": "setCustomFill",
+          "kind": "Method",
+          "detail": "setCustomFill()",
+          "documentation": "Sets the fill settings for the Tools panel, Property inspector, and any selected shapes.",
+          "insertText": "setCustomFill()"
+        },
+        {
+          "name": "setCustomStroke",
+          "kind": "Method",
+          "detail": "setCustomStroke()",
+          "documentation": "Sets the stroke settings for the Tools panel, Property inspector, and any selected shapes.",
+          "insertText": "setCustomStroke()"
+        },
+        {
+          "name": "setElementProperty",
+          "kind": "Method",
+          "detail": "setElementProperty()",
+          "documentation": "Sets the specified Element property on selected objects in the document.",
+          "insertText": "setElementProperty()"
+        },
+        {
+          "name": "setElementTextAttr",
+          "kind": "Method",
+          "detail": "setElementTextAttr()",
+          "documentation": "Sets the specified TextAttrs property of the selected text items to the specified value.",
+          "insertText": "setElementTextAttr()"
+        },
+        {
+          "name": "setFillColor",
+          "kind": "Method",
+          "detail": "setFillColor()",
+          "documentation": "Changes the selection and the tools panel to the specified color.",
+          "insertText": "setFillColor()"
+        },
+        {
+          "name": "setFilterProperty",
+          "kind": "Method",
+          "detail": "setFilterProperty()",
+          "documentation": "Sets a specified filter property for the currently selected objects.",
+          "insertText": "setFilterProperty()"
+        },
+        {
+          "name": "setFilters",
+          "kind": "Method",
+          "detail": "setFilters()",
+          "documentation": "Applies filters to the selected objects.",
+          "insertText": "setFilters()"
+        },
+        {
+          "name": "setInstanceAlpha",
+          "kind": "Method",
+          "detail": "setInstanceAlpha()",
+          "documentation": "Sets the opacity of the instance.",
+          "insertText": "setInstanceAlpha()"
+        },
+        {
+          "name": "setInstanceBrightness",
+          "kind": "Method",
+          "detail": "setInstanceBrightness()",
+          "documentation": "Sets the brightness for the instance.",
+          "insertText": "setInstanceBrightness()"
+        },
+        {
+          "name": "setInstanceTint",
+          "kind": "Method",
+          "detail": "setInstanceTint()",
+          "documentation": "Sets the tint for the instance.",
+          "insertText": "setInstanceTint()"
+        },
+        {
+          "name": "setMetadata",
+          "kind": "Method",
+          "detail": "setMetadata()",
+          "documentation": "Sets the XML metadata for the specified document, overwriting any existing metadata.",
+          "insertText": "setMetadata()"
+        },
+        {
+          "name": "setMobileSettings",
+          "kind": "Method",
+          "detail": "setMobileSettings()",
+          "documentation": "Sets the value of an XML settings string in a mobile FLA file.",
+          "insertText": "setMobileSettings()"
+        },
+        {
+          "name": "setOvalObjectProperty",
+          "kind": "Method",
+          "detail": "setOvalObjectProperty()",
+          "documentation": "Specifies a value for a specified property of primitive Oval objects.",
+          "insertText": "setOvalObjectProperty()"
+        },
+        {
+          "name": "setPlayerVersion",
+          "kind": "Method",
+          "detail": "setPlayerVersion()",
+          "documentation": "Sets the version of the Flash Player targeted by the specified document.",
+          "insertText": "setPlayerVersion()"
+        },
+        {
+          "name": "setRectangleObjectProperty",
+          "kind": "Method",
+          "detail": "setRectangleObjectProperty()",
+          "documentation": "Specifies a value for a specified property of primitive Rectangle objects.",
+          "insertText": "setRectangleObjectProperty()"
+        },
+        {
+          "name": "setSelectionBounds",
+          "kind": "Method",
+          "detail": "setSelectionBounds()",
+          "documentation": "Moves and resizes the selection in a single operation.",
+          "insertText": "setSelectionBounds()"
+        },
+        {
+          "name": "setSelectionRect",
+          "kind": "Method",
+          "detail": "setSelectionRect()",
+          "documentation": "Draws a rectangular selection marquee relative to the Stage, using the specified coordinates.",
+          "insertText": "setSelectionRect()"
+        },
+        {
+          "name": "setStageVanishingPoint",
+          "kind": "Method",
+          "detail": "setStageVanishingPoint()",
+          "documentation": "Specifies the vanishing point for viewing 3D objects.",
+          "insertText": "setStageVanishingPoint()"
+        },
+        {
+          "name": "setStageViewAngle",
+          "kind": "Method",
+          "detail": "setStageViewAngle()",
+          "documentation": "Specifies the perspective angle for viewing 3D objects.",
+          "insertText": "setStageViewAngle()"
+        },
+        {
+          "name": "setStroke",
+          "kind": "Method",
+          "detail": "setStroke()",
+          "documentation": "Sets the color, width, and style of the selected strokes.",
+          "insertText": "setStroke()"
+        },
+        {
+          "name": "setStrokeColor",
+          "kind": "Method",
+          "detail": "setStrokeColor()",
+          "documentation": "Changes the stroke color of the selection to the specified color.",
+          "insertText": "setStrokeColor()"
+        },
+        {
+          "name": "setStrokeSize",
+          "kind": "Method",
+          "detail": "setStrokeSize()",
+          "documentation": "Changes the stroke size of the selection to the specified size.",
+          "insertText": "setStrokeSize()"
+        },
+        {
+          "name": "setStrokeStyle",
+          "kind": "Method",
+          "detail": "setStrokeStyle()",
+          "documentation": "Changes the stroke style of the selection to the specified style.",
+          "insertText": "setStrokeStyle()"
+        },
+        {
+          "name": "setTaggedSwatchAtIndex",
+          "kind": "Method",
+          "detail": "setTaggedSwatchAtIndex()",
+          "documentation": "Replace the tagged swatch with the given index to the given new swatch object.",
+          "insertText": "setTaggedSwatchAtIndex()"
+        },
+        {
+          "name": "setTaggedSwatchByName",
+          "kind": "Method",
+          "detail": "setTaggedSwatchByName()",
+          "documentation": "Replace the tagged swatch with the given name to the given new swatch object",
+          "insertText": "setTaggedSwatchByName()"
+        },
+        {
+          "name": "setTextRectangle",
+          "kind": "Method",
+          "detail": "setTextRectangle()",
+          "documentation": "Changes the bounding rectangle for the selected text item to the specified size.",
+          "insertText": "setTextRectangle()"
+        },
+        {
+          "name": "setTextSelection",
+          "kind": "Method",
+          "detail": "setTextSelection()",
+          "documentation": "Sets the text selection of the currently selected text field to the values specified by the startIndex and endIndex values.",
+          "insertText": "setTextSelection()"
+        },
+        {
+          "name": "setTextString",
+          "kind": "Method",
+          "detail": "setTextString()",
+          "documentation": "Inserts a string of text.",
+          "insertText": "setTextString()"
+        },
+        {
+          "name": "setTransformationPoint",
+          "kind": "Method",
+          "detail": "setTransformationPoint()",
+          "documentation": "Moves the transformation point of the current selection.",
+          "insertText": "setTransformationPoint()"
+        },
+        {
+          "name": "skewSelection",
+          "kind": "Method",
+          "detail": "skewSelection()",
+          "documentation": "Skews the selection by a specified amount.",
+          "insertText": "skewSelection()"
+        },
+        {
+          "name": "smoothSelection",
+          "kind": "Method",
+          "detail": "smoothSelection()",
+          "documentation": "Smooths the curve of each selected fill outline or curved line.",
+          "insertText": "smoothSelection()"
+        },
+        {
+          "name": "space",
+          "kind": "Method",
+          "detail": "space()",
+          "documentation": "Spaces the objects in the selection evenly.",
+          "insertText": "space()"
+        },
+        {
+          "name": "straightenSelection",
+          "kind": "Method",
+          "detail": "straightenSelection()",
+          "documentation": "Straightens the currently selected strokes; equivalent to using the Straighten button in the Tools panel.",
+          "insertText": "straightenSelection()"
+        },
+        {
+          "name": "swapElement",
+          "kind": "Method",
+          "detail": "swapElement()",
+          "documentation": "Swaps the current selection with the specified one.",
+          "insertText": "swapElement()"
+        },
+        {
+          "name": "swapStrokeAndFill",
+          "kind": "Method",
+          "detail": "swapStrokeAndFill()",
+          "documentation": "Swaps the Stroke and Fill colors.",
+          "insertText": "swapStrokeAndFill()"
+        },
+        {
+          "name": "testMovie",
+          "kind": "Method",
+          "detail": "testMovie()",
+          "documentation": "Executes a Test Movie operation on the document.",
+          "insertText": "testMovie()"
+        },
+        {
+          "name": "testScene",
+          "kind": "Method",
+          "detail": "testScene()",
+          "documentation": "Executes a Test Scene operation on the current scene of the document.",
+          "insertText": "testScene()"
+        },
+        {
+          "name": "traceBitmap",
+          "kind": "Method",
+          "detail": "traceBitmap()",
+          "documentation": "Performs a trace bitmap on the current selection; equivalent to selecting Modify>Bitmap>Trace Bitmap.",
+          "insertText": "traceBitmap()"
+        },
+        {
+          "name": "transformSelection",
+          "kind": "Method",
+          "detail": "transformSelection()",
+          "documentation": "Performs a general transformation on the current selection by applying the matrix specified in the arguments.",
+          "insertText": "transformSelection()"
+        },
+        {
+          "name": "translate3DCenter",
+          "kind": "Method",
+          "detail": "translate3DCenter()",
+          "documentation": "Sets the XYZ position around which the selection is translated or rotated.",
+          "insertText": "translate3DCenter()"
+        },
+        {
+          "name": "translate3DSelection",
+          "kind": "Method",
+          "detail": "translate3DSelection()",
+          "documentation": "Applies a 3D translation to the selection.",
+          "insertText": "translate3DSelection()"
+        },
+        {
+          "name": "unGroup",
+          "kind": "Method",
+          "detail": "unGroup()",
+          "documentation": "Ungroups the current selection.",
+          "insertText": "unGroup()"
+        },
+        {
+          "name": "union",
+          "kind": "Method",
+          "detail": "union()",
+          "documentation": "Combines all selected shapes into a drawing object.",
+          "insertText": "union()"
+        },
+        {
+          "name": "unlockAllElements",
+          "kind": "Method",
+          "detail": "unlockAllElements()",
+          "documentation": "Unlocks all locked elements on the currently selected frame.",
+          "insertText": "unlockAllElements()"
+        },
+        {
+          "name": "xmlPanel",
+          "kind": "Method",
+          "detail": "xmlPanel()",
+          "documentation": "Posts a XMLUI dialog box.",
+          "insertText": "xmlPanel()"
+        },
+        {
+          "name": "accName",
+          "kind": "Property",
+          "detail": "accName",
+          "documentation": "A string that is equivalent to the Name field in the Accessibility panel."
+        },
+        {
+          "name": "as3AutoDeclare",
+          "kind": "Property",
+          "detail": "as3AutoDeclare",
+          "documentation": "A Boolean value that describes whether the instances placed on the Stage are automatically added to user-defined timeline classes."
+        },
+        {
+          "name": "as3Dialect",
+          "kind": "Property",
+          "detail": "as3Dialect",
+          "documentation": "A string that describes the ActionScript 3.0 \"dialect\" being used in the specified document."
+        },
+        {
+          "name": "as3ExportFrame",
+          "kind": "Property",
+          "detail": "as3ExportFrame",
+          "documentation": "An integer that specifies in which frame to export ActionScript 3.0 classes."
+        },
+        {
+          "name": "as3StrictMode",
+          "kind": "Property",
+          "detail": "as3StrictMode",
+          "documentation": "A Boolean value that specifies whether the ActionScript 3.0 compiler should compile with the Strict Mode option turned on or off."
+        },
+        {
+          "name": "as3WarningsMode",
+          "kind": "Property",
+          "detail": "as3WarningsMode",
+          "documentation": "A Boolean value that specifies whether the ActionScript 3.0 compiler should compile with the Warnings Mode option turned on or off."
+        },
+        {
+          "name": "asVersion",
+          "kind": "Property",
+          "detail": "asVersion",
+          "documentation": "An integer that specifies which version of ActionScript is being used in the specified file."
+        },
+        {
+          "name": "autoLabel",
+          "kind": "Property",
+          "detail": "autoLabel",
+          "documentation": "A Boolean value that is equivalent to the Auto Label check box in the Accessibility panel."
+        },
+        {
+          "name": "backgroundColor",
+          "kind": "Property",
+          "detail": "backgroundColor",
+          "documentation": "A string, hexadecimal value, or integer that represents the background color."
+        },
+        {
+          "name": "currentPublishProfile",
+          "kind": "Property",
+          "detail": "currentPublishProfile",
+          "documentation": "A string that specifies the name of the active publish profile for the specified document."
+        },
+        {
+          "name": "currentTimeline",
+          "kind": "Property",
+          "detail": "currentTimeline",
+          "documentation": "An integer that specifies the index of the active timeline."
+        },
+        {
+          "name": "description",
+          "kind": "Property",
+          "detail": "description",
+          "documentation": "A string that is equivalent to the Description field in the Accessibility panel."
+        },
+        {
+          "name": "docClass",
+          "kind": "Property",
+          "detail": "docClass",
+          "documentation": "Specifies the top-level ActionScript 3.0 class associated with the document."
+        },
+        {
+          "name": "externalLibraryPath",
+          "kind": "Property",
+          "detail": "externalLibraryPath",
+          "documentation": "A string that contains a list of items in the document’s ActionScript 3.0 External library path, which specifies the location of SWC files used as runtime shared libraries."
+        },
+        {
+          "name": "forceSimple",
+          "kind": "Property",
+          "detail": "forceSimple",
+          "documentation": "A Boolean value that specifies whether the children of the specified object are accessible."
+        },
+        {
+          "name": "frameRate",
+          "kind": "Property",
+          "detail": "frameRate",
+          "documentation": "A float value that specifies the number of frames displayed per second when the SWF file plays; the default is 12."
+        },
+        {
+          "name": "height",
+          "kind": "Property",
+          "detail": "height",
+          "documentation": "An integer that specifies the height of the document (Stage) in pixels."
+        },
+        {
+          "name": "id",
+          "kind": "Property",
+          "detail": "id",
+          "documentation": "A unique integer (assigned automatically) that identifies a document during a Flash session."
+        },
+        {
+          "name": "library",
+          "kind": "Property",
+          "detail": "library",
+          "documentation": "Read-only; the library object for a document.",
+          "returnType": "Library"
+        },
+        {
+          "name": "libraryPath",
+          "kind": "Property",
+          "detail": "libraryPath",
+          "documentation": "A string that contains a list of items in the document’s ActionScript 3.0 Library path, which specifies the location of SWC files or folders containing SWC files."
+        },
+        {
+          "name": "livePreview",
+          "kind": "Property",
+          "detail": "livePreview",
+          "documentation": "A Boolean value that specifies whether Live Preview is enabled."
+        },
+        {
+          "name": "name",
+          "kind": "Property",
+          "detail": "name",
+          "documentation": "Read-only; a string that represents the name of a document (FLA file)."
+        },
+        {
+          "name": "path",
+          "kind": "Property",
+          "detail": "path",
+          "documentation": "Read-only; a string that represents the path of the document, in a platform-specific format."
+        },
+        {
+          "name": "pathURI",
+          "kind": "Property",
+          "detail": "pathURI",
+          "documentation": "Read-only; a string that represents the path of the document, expressed as a file:/// URI."
+        },
+        {
+          "name": "publishProfiles",
+          "kind": "Property",
+          "detail": "publishProfiles",
+          "documentation": "Read-only; an array of the publish profile names for the document."
+        },
+        {
+          "name": "screenOutline",
+          "kind": "Property",
+          "detail": "screenOutline",
+          "documentation": "Dropped in Adobe Animate."
+        },
+        {
+          "name": "selection",
+          "kind": "Property",
+          "detail": "selection",
+          "documentation": "An array of the selected objects in the document."
+        },
+        {
+          "name": "silent",
+          "kind": "Property",
+          "detail": "silent",
+          "documentation": "A Boolean value that specifies whether the object is accessible."
+        },
+        {
+          "name": "sourcePath",
+          "kind": "Property",
+          "detail": "sourcePath",
+          "documentation": "A string that contains a list of items in the document’s ActionScript 3.0 Source path, which specifies the location of ActionScript class files."
+        },
+        {
+          "name": "swfJPEGQuality",
+          "kind": "Property",
+          "detail": "swfJPEGQuality",
+          "documentation": "An integer that returns the JPEG Quality setting from the current Publish Profile in the document."
+        },
+        {
+          "name": "timelines",
+          "kind": "Property",
+          "detail": "timelines",
+          "documentation": "Read-only; an array of Timeline objects (see Timeline object)."
+        },
+        {
+          "name": "viewMatrix",
+          "kind": "Property",
+          "detail": "viewMatrix",
+          "documentation": "Read-only; a Matrix object.",
+          "returnType": "Matrix"
+        },
+        {
+          "name": "width",
+          "kind": "Property",
+          "detail": "width",
+          "documentation": "An integer that specifies the width of the document (Stage) in pixels."
+        },
+        {
+          "name": "zoomFactor",
+          "kind": "Property",
+          "detail": "zoomFactor",
+          "documentation": "Specifies the zoom percent of the Stage at authoring time."
+        }
+      ]
+    },
+    {
+      "name": "Timeline",
+      "members": [
+        {
+          "name": "cutFrames",
+          "kind": "Method",
+          "detail": "cutFrames()",
+          "documentation": "Cuts a range of frames on the current layer from the timeline and saves them to the clipboard.",
+          "insertText": "cutFrames()"
+        },
+        {
+          "name": "cutLayers",
+          "kind": "Method",
+          "detail": "cutLayers()",
+          "documentation": "Cuts a range of Timeline layers and saves them to the clipboard.",
+          "insertText": "cutLayers()"
+        },
+        {
+          "name": "deleteLayer",
+          "kind": "Method",
+          "detail": "deleteLayer()",
+          "documentation": "Deletes a layer.",
+          "insertText": "deleteLayer()"
+        },
+        {
+          "name": "duplicateLayers",
+          "kind": "Method",
+          "detail": "duplicateLayers()",
+          "documentation": "Duplicates the selected layers or specified layers.",
+          "insertText": "duplicateLayers()"
+        },
+        {
+          "name": "expandFolder",
+          "kind": "Method",
+          "detail": "expandFolder()",
+          "documentation": "Expands or collapses the specified folder or folders.",
+          "insertText": "expandFolder()"
+        },
+        {
+          "name": "findLayerIndex",
+          "kind": "Method",
+          "detail": "findLayerIndex()",
+          "documentation": "Finds an array of indexes for the layers with the given name.",
+          "insertText": "findLayerIndex()"
+        },
+        {
+          "name": "getBounds",
+          "kind": "Method",
+          "detail": "getBounds()",
+          "documentation": "Returns the bounding rectangle for all elements on all layers on the Timeline, for a given frame.",
+          "insertText": "getBounds()"
+        },
+        {
+          "name": "getFrameProperty",
+          "kind": "Method",
+          "detail": "getFrameProperty()",
+          "documentation": "Retrieves the specified property’s value for the selected frames.",
+          "insertText": "getFrameProperty()"
+        },
+        {
+          "name": "getGuidelines",
+          "kind": "Method",
+          "detail": "getGuidelines()",
+          "documentation": "Returns an XML string that represents the current positions of the horizontal and vertical guide lines for a timeline (View > Guides > Show Guides).",
+          "insertText": "getGuidelines()"
+        },
+        {
+          "name": "getLayerProperty",
+          "kind": "Method",
+          "detail": "getLayerProperty()",
+          "documentation": "Retrieves the specified property’s value for the selected layers.",
+          "insertText": "getLayerProperty()"
+        },
+        {
+          "name": "getSelectedFrames",
+          "kind": "Method",
+          "detail": "getSelectedFrames()",
+          "documentation": "Retrieves the currently selected frames in an array.",
+          "insertText": "getSelectedFrames()"
+        },
+        {
+          "name": "getSelectedLayers",
+          "kind": "Method",
+          "detail": "getSelectedLayers()",
+          "documentation": "Retrieves the zero-based index values of the currently selected layers.",
+          "insertText": "getSelectedLayers()"
+        },
+        {
+          "name": "insertBlankKeyframe",
+          "kind": "Method",
+          "detail": "insertBlankKeyframe()",
+          "documentation": "Inserts a blank keyframe at the specified frame index; if the index is not specified, inserts the blank keyframe by using the playhead/selection.",
+          "insertText": "insertBlankKeyframe()"
+        },
+        {
+          "name": "insertFrames",
+          "kind": "Method",
+          "detail": "insertFrames()",
+          "documentation": "Inserts the specified number of frames at the given frame number.",
+          "insertText": "insertFrames()"
+        },
+        {
+          "name": "insertKeyframe",
+          "kind": "Method",
+          "detail": "insertKeyframe()",
+          "documentation": "Inserts a keyframe at the specified frame.",
+          "insertText": "insertKeyframe()"
+        },
+        {
+          "name": "mergeLayers",
+          "kind": "Method",
+          "detail": "mergeLayers()",
+          "documentation": "Merge the layers within a specified range of indexes.",
+          "insertText": "mergeLayers()"
+        },
+        {
+          "name": "pasteFrames",
+          "kind": "Method",
+          "detail": "pasteFrames()",
+          "documentation": "Pastes the range of frames from the clipboard into the specified frames.",
+          "insertText": "pasteFrames()"
+        },
+        {
+          "name": "pasteLayers",
+          "kind": "Method",
+          "detail": "pasteLayers()",
+          "documentation": "Pastes copied layers to the Timeline above the specified layer index.",
+          "insertText": "pasteLayers()"
+        },
+        {
+          "name": "pasteMotion",
+          "kind": "Method",
+          "detail": "pasteMotion()",
+          "documentation": "Pastes the range of motion frames retrieved by timeline.copyMotion() to the Timeline.",
+          "insertText": "pasteMotion()"
+        },
+        {
+          "name": "pasteMotionSpecial",
+          "kind": "Method",
+          "detail": "pasteMotionSpecial()",
+          "documentation": "Pastes motion on selected frames, displaying a dialog box that lets the user choose which parts of a classic tween to paste.",
+          "insertText": "pasteMotionSpecial()"
+        },
+        {
+          "name": "removeFrames",
+          "kind": "Method",
+          "detail": "removeFrames()",
+          "documentation": "Deletes the frame.",
+          "insertText": "removeFrames()"
+        },
+        {
+          "name": "removeMotionObject",
+          "kind": "Method",
+          "detail": "removeMotionObject()",
+          "documentation": "Removes the motion object created with timeline.createMotionObject(), and converts the frame(s) to static frames.",
+          "insertText": "removeMotionObject()"
+        },
+        {
+          "name": "reorderLayer",
+          "kind": "Method",
+          "detail": "reorderLayer()",
+          "documentation": "Moves the first specified layer before or after the second specified layer.",
+          "insertText": "reorderLayer()"
+        },
+        {
+          "name": "reverseFrames",
+          "kind": "Method",
+          "detail": "reverseFrames()",
+          "documentation": "Reverses a range of frames.",
+          "insertText": "reverseFrames()"
+        },
+        {
+          "name": "selectAllFrames",
+          "kind": "Method",
+          "detail": "selectAllFrames()",
+          "documentation": "Selects all the frames in the current timeline.",
+          "insertText": "selectAllFrames()"
+        },
+        {
+          "name": "setFrameProperty",
+          "kind": "Method",
+          "detail": "setFrameProperty()",
+          "documentation": "Sets the property of the Frame object for the selected frames.",
+          "insertText": "setFrameProperty()"
+        },
+        {
+          "name": "setGuidelines",
+          "kind": "Method",
+          "detail": "setGuidelines()",
+          "documentation": "Replaces the guide lines for the timeline with the information specified.",
+          "insertText": "setGuidelines()"
+        },
+        {
+          "name": "setLayerProperty",
+          "kind": "Method",
+          "detail": "setLayerProperty()",
+          "documentation": "Sets the specified property on all the selected layers to a specified value.",
+          "insertText": "setLayerProperty()"
+        },
+        {
+          "name": "setSelectedFrames",
+          "kind": "Method",
+          "detail": "setSelectedFrames()",
+          "documentation": "Selects a range of frames in the current layer or sets the selected frames to the selection array passed into this method.",
+          "insertText": "setSelectedFrames()"
+        },
+        {
+          "name": "addMotionGuide",
+          "kind": "Method",
+          "detail": "addMotionGuide()",
+          "documentation": "Adds a motion guide layer above the current layer and attaches the current layer to the newly added guide layer.",
+          "insertText": "addMotionGuide()"
+        },
+        {
+          "name": "addNewLayer",
+          "kind": "Method",
+          "detail": "addNewLayer()",
+          "documentation": "Adds a new layer to the document and makes it the current layer.",
+          "insertText": "addNewLayer()"
+        },
+        {
+          "name": "clearFrames",
+          "kind": "Method",
+          "detail": "clearFrames()",
+          "documentation": "Deletes all the contents from a frame or range of frames on the current layer.",
+          "insertText": "clearFrames()"
+        },
+        {
+          "name": "clearKeyframes",
+          "kind": "Method",
+          "detail": "clearKeyframes()",
+          "documentation": "Converts a keyframe to a regular frame and deletes its contents on the current layer.",
+          "insertText": "clearKeyframes()"
+        },
+        {
+          "name": "convertToBlankKeyframes",
+          "kind": "Method",
+          "detail": "convertToBlankKeyframes()",
+          "documentation": "Converts frames to blank keyframes on the current layer.",
+          "insertText": "convertToBlankKeyframes()"
+        },
+        {
+          "name": "convertToKeyframes",
+          "kind": "Method",
+          "detail": "convertToKeyframes()",
+          "documentation": "Converts a range of frames to keyframes (or converts the selection if no frames are specified) on the current layer.",
+          "insertText": "convertToKeyframes()"
+        },
+        {
+          "name": "copyFrames",
+          "kind": "Method",
+          "detail": "copyFrames()",
+          "documentation": "Copies a range of frames on the current layer to the clipboard.",
+          "insertText": "copyFrames()"
+        },
+        {
+          "name": "copyLayers",
+          "kind": "Method",
+          "detail": "copyLayers()",
+          "documentation": "Copies a range of Timeline layers to the clipboard.",
+          "insertText": "copyLayers()"
+        },
+        {
+          "name": "copyMotion",
+          "kind": "Method",
+          "detail": "copyMotion()",
+          "documentation": "Copies motion on selected frames, either from a motion tween or from frame-by-frame animation, so it can be applied to other frames.",
+          "insertText": "copyMotion()"
+        },
+        {
+          "name": "copyMotionAsAS3",
+          "kind": "Method",
+          "detail": "copyMotionAsAS3()",
+          "documentation": "Copies motion on selected frames, either from a motion tween or from frame-by-frame animation, to the clipboard as ActionScript 3.0 code.",
+          "insertText": "copyMotionAsAS3()"
+        },
+        {
+          "name": "createMotionObject",
+          "kind": "Method",
+          "detail": "createMotionObject()",
+          "documentation": "Creates a new motion object at a designated start and end frame.",
+          "insertText": "createMotionObject()"
+        },
+        {
+          "name": "createMotionTween",
+          "kind": "Method",
+          "detail": "createMotionTween()",
+          "documentation": "Sets the [frame.tweenType](../Frame_object/frame39.md) property to motion for each selected keyframe on the current layer, and converts each frame’s contents to a single symbol instance if necessary.",
+          "insertText": "createMotionTween()"
+        },
+        {
+          "name": "setSelectedLayers",
+          "kind": "Method",
+          "detail": "setSelectedLayers()",
+          "documentation": "Sets the layer to be selected; also makes the specified layer the current layer.",
+          "insertText": "setSelectedLayers()"
+        },
+        {
+          "name": "showLayerMasking",
+          "kind": "Method",
+          "detail": "showLayerMasking()",
+          "documentation": "Shows the layer masking during authoring by locking the mask and masked layers.",
+          "insertText": "showLayerMasking()"
+        },
+        {
+          "name": "startPlayback",
+          "kind": "Method",
+          "detail": "startPlayback()",
+          "documentation": "Starts automatic playback of the timeline if it is not currently playing.",
+          "insertText": "startPlayback()"
+        },
+        {
+          "name": "stopPlayback",
+          "kind": "Method",
+          "detail": "stopPlayback()",
+          "documentation": "Stops autoumatic playback of the timeline if it is currently playing.",
+          "insertText": "stopPlayback()"
+        },
+        {
+          "name": "advancedLayersEnabled",
+          "kind": "Property",
+          "detail": "advancedLayersEnabled",
+          "documentation": "Enable / disable advanced layers mode."
+        },
+        {
+          "name": "currentFrame",
+          "kind": "Property",
+          "detail": "currentFrame",
+          "documentation": "A zero-based index for the frame at the current playhead location."
+        },
+        {
+          "name": "currentLayer",
+          "kind": "Property",
+          "detail": "currentLayer",
+          "documentation": "A zero-based index for the currently active layer."
+        },
+        {
+          "name": "frameCount",
+          "kind": "Property",
+          "detail": "frameCount",
+          "documentation": "Read-only; an integer that represents the number of frames in this timeline’s longest layer."
+        },
+        {
+          "name": "layerCount",
+          "kind": "Property",
+          "detail": "layerCount",
+          "documentation": "Read-only; an integer that represents the number of layers in the specified timeline."
+        },
+        {
+          "name": "layers",
+          "kind": "Property",
+          "detail": "layers",
+          "documentation": "Read-only; an array of layer objects."
+        },
+        {
+          "name": "libraryItem",
+          "kind": "Property",
+          "detail": "libraryItem",
+          "documentation": "Read-only property; indicates whether the timeline belongs to a scene."
+        },
+        {
+          "name": "name",
+          "kind": "Property",
+          "detail": "name",
+          "documentation": "A string that represents the name of the current timeline."
+        }
+      ]
+    },
+    {
+      "name": "Library",
+      "members": [
+        {
+          "name": "addItemToDocument",
+          "kind": "Method",
+          "detail": "addItemToDocument()",
+          "documentation": "Adds the current or specified item to the Stage at the specified position.",
+          "insertText": "addItemToDocument()"
+        },
+        {
+          "name": "addNewItem",
+          "kind": "Method",
+          "detail": "addNewItem()",
+          "documentation": "Creates a new item of the specified type in the Library panel and sets the new item to the currently selected item.",
+          "insertText": "addNewItem()"
+        },
+        {
+          "name": "deleteItem",
+          "kind": "Method",
+          "detail": "deleteItem()",
+          "documentation": "Deletes the current items or a specified item from the Library panel.",
+          "insertText": "deleteItem()"
+        },
+        {
+          "name": "duplicateItem",
+          "kind": "Method",
+          "detail": "duplicateItem()",
+          "documentation": "Makes a copy of the currently selected or specified item.",
+          "insertText": "duplicateItem()"
+        },
+        {
+          "name": "editItem",
+          "kind": "Method",
+          "detail": "editItem()",
+          "documentation": "Opens the currently selected or specified item in Edit mode.",
+          "insertText": "editItem()"
+        },
+        {
+          "name": "findItemIndex",
+          "kind": "Method",
+          "detail": "findItemIndex()",
+          "documentation": "Returns the library item’s index value (zero-based).",
+          "insertText": "findItemIndex()"
+        },
+        {
+          "name": "getItemProperty",
+          "kind": "Method",
+          "detail": "getItemProperty()",
+          "documentation": "Gets the property for the selected item.",
+          "insertText": "getItemProperty()"
+        },
+        {
+          "name": "getItemType",
+          "kind": "Method",
+          "detail": "getItemType()",
+          "documentation": "Gets the type of object currently selected or specified by a library path.",
+          "insertText": "getItemType()"
+        },
+        {
+          "name": "getSelectedItems",
+          "kind": "Method",
+          "detail": "getSelectedItems()",
+          "documentation": "Gets the array of all currently selected items in the library.",
+          "insertText": "getSelectedItems()"
+        },
+        {
+          "name": "itemExists",
+          "kind": "Method",
+          "detail": "itemExists()",
+          "documentation": "Checks to see if a specified item exists in the library.",
+          "insertText": "itemExists()"
+        },
+        {
+          "name": "moveToFolder",
+          "kind": "Method",
+          "detail": "moveToFolder()",
+          "documentation": "Moves the currently selected or specified library item to a specified folder.",
+          "insertText": "moveToFolder()"
+        },
+        {
+          "name": "newFolder",
+          "kind": "Method",
+          "detail": "newFolder()",
+          "documentation": "Creates a new folder with the specified name, or a default name (\"untitled folder \\#\") if no folderName parameter is provided, in the currently selected folder.",
+          "insertText": "newFolder()"
+        },
+        {
+          "name": "renameItem",
+          "kind": "Method",
+          "detail": "renameItem()",
+          "documentation": "Renames the currently selected library item in the Library panel.",
+          "insertText": "renameItem()"
+        },
+        {
+          "name": "selectAll",
+          "kind": "Method",
+          "detail": "selectAll()",
+          "documentation": "Selects or deselects all items in the library.",
+          "insertText": "selectAll()"
+        },
+        {
+          "name": "selectItem",
+          "kind": "Method",
+          "detail": "selectItem()",
+          "documentation": "Selects a specified library item.",
+          "insertText": "selectItem()"
+        },
+        {
+          "name": "selectNone",
+          "kind": "Method",
+          "detail": "selectNone()",
+          "documentation": "Deselects all the library items.",
+          "insertText": "selectNone()"
+        },
+        {
+          "name": "setItemProperty",
+          "kind": "Method",
+          "detail": "setItemProperty()",
+          "documentation": "Sets the property for all selected library items (ignoring folders).",
+          "insertText": "setItemProperty()"
+        },
+        {
+          "name": "updateItem",
+          "kind": "Method",
+          "detail": "updateItem()",
+          "documentation": "Updates the specified item.",
+          "insertText": "updateItem()"
+        },
+        {
+          "name": "items",
+          "kind": "Property",
+          "detail": "items",
+          "documentation": "An array of Item objects in the library"
+        },
+        {
+          "name": "unusedItems",
+          "kind": "Property",
+          "detail": "unusedItems",
+          "documentation": "An array of library Items that are not used in the document."
+        }
+      ]
+    },
+    {
+      "name": "Matrix",
+      "members": [
+        {
+          "name": "a",
+          "kind": "Property",
+          "detail": "a",
+          "documentation": "A floating-point value that specifies the (0,0) element in the transformation matrix."
+        },
+        {
+          "name": "b",
+          "kind": "Property",
+          "detail": "b",
+          "documentation": "A floating-point value that specifies the (0,1) element in the matrix."
+        },
+        {
+          "name": "c",
+          "kind": "Property",
+          "detail": "c",
+          "documentation": "A floating-point value that specifies the (1,0) element in the matrix."
+        },
+        {
+          "name": "d",
+          "kind": "Property",
+          "detail": "d",
+          "documentation": "A floating-point value that specifies the (1,1) element in the matrix."
+        },
+        {
+          "name": "tx",
+          "kind": "Property",
+          "detail": "tx",
+          "documentation": "A floating-point value that specifies the x-axis location of a symbol’s registration point or the center of a shape."
+        },
+        {
+          "name": "ty",
+          "kind": "Property",
+          "detail": "ty",
+          "documentation": "A floating-point value that specifies the y-axis location of a symbol’s registration point or the center of a shape."
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,9 @@
   "version": "0.0.1",
   "private": true,
   "publisher": "local",
+  "extensionDependencies": [
+    "vscode.javascript"
+  ],
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -25,7 +28,18 @@
         ],
         "extensions": [
           ".jsfl"
-        ]
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jsfl",
+        "scopeName": "source.jsfl",
+        "path": "./syntaxes/jsfl.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.js": "javascript"
+        }
       }
     ]
   },

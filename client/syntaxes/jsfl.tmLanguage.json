@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "JSFL",
+  "scopeName": "source.jsfl",
+  "patterns": [
+    {
+      "include": "#jsfl-globals"
+    },
+    {
+      "include": "source.js"
+    }
+  ],
+  "repository": {
+    "jsfl-globals": {
+      "patterns": [
+        {
+          "name": "support.variable.jsfl",
+          "match": "\\bfl\\b"
+        },
+        {
+          "name": "support.class.jsfl",
+          "match": "\\bFLfile\\b"
+        },
+        {
+          "name": "support.function.jsfl",
+          "match": "\\bMMExecute\\b"
+        }
+      ]
+    }
+  }
+}

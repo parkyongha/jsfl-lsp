@@ -13,6 +13,7 @@ import { TextDocument } from 'vscode-languageserver-textdocument';
 import ts from 'typescript';
 
 import log from "./log";
+import { provideCompletion } from './completion/completion';
 
 type UnsupportedSyntaxRule = {
     code: string;
@@ -107,6 +108,10 @@ let shutdownRequested = false;
 connection.onInitialize((): InitializeResult => {
     return {
         capabilities: {
+            completionProvider: {
+                triggerCharacters: ['.'],
+                resolveProvider: false
+            },
             textDocumentSync: TextDocumentSyncKind.Incremental,
         },
         serverInfo: {
@@ -122,6 +127,15 @@ connection.onInitialized(() => {
 
 connection.onShutdown(() => {
     shutdownRequested = true;
+});
+
+connection.onCompletion((params) => {
+    const document = documents.get(params.textDocument.uri);
+    if (!document) {
+        return { isIncomplete: false, items: [] };
+    }
+
+    return provideCompletion(document, params);
 });
 
 connection.onExit(() => {
