@@ -111,6 +111,8 @@ function normalizeSymbolDefinition(rawSymbol: JsflRawSymbolDefinition): JsflSymb
 	return {
 		name: rawSymbol.name,
 		kind,
+		signature: rawSymbol.signature,
+		parameters: rawSymbol.parameters,
 		detail: rawSymbol.detail,
 		documentation: rawSymbol.documentation,
 		insertText: rawSymbol.insertText,

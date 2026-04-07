@@ -107,6 +107,13 @@
     {
       "name": "MMExecute",
       "kind": "Function",
+      "signature": "(script)",
+      "parameters": [
+        {
+          "name": "script",
+          "description": "실행할 JSFL 또는 호스트 스크립트 문자열입니다."
+        }
+      ],
       "detail": "MMExecute(script)",
       "documentation": "호스트 환경에서 스크립트를 실행합니다.",
       "insertText": "MMExecute()"
@@ -161,6 +168,13 @@
         {
           "name": "openDocument",
           "kind": "Method",
+          "signature": "(fileURI)",
+          "parameters": [
+            {
+              "name": "fileURI",
+              "description": "열 문서의 file:/// URI 경로입니다."
+            }
+          ],
           "detail": "openDocument()",
           "documentation": "Opens a Flash (FLA) document for editing in a new Flash Document window and gives it focus.",
           "insertText": "openDocument()",
@@ -288,6 +302,13 @@
         {
           "name": "trace",
           "kind": "Method",
+          "signature": "(message)",
+          "parameters": [
+            {
+              "name": "message",
+              "description": "Output 패널에 출력할 문자열입니다."
+            }
+          ],
           "detail": "trace()",
           "documentation": "Sends a text string to the Output panel.",
           "insertText": "trace()"
@@ -437,6 +458,7 @@
         {
           "name": "getDocumentDOM",
           "kind": "Method",
+          "signature": "()",
           "detail": "getDocumentDOM()",
           "documentation": "Retrieves the DOM ([Document object](../Document_object/document_summary.md)) of the currently active document.",
           "insertText": "getDocumentDOM()",
@@ -674,6 +696,13 @@
         {
           "name": "exists",
           "kind": "Method",
+          "signature": "(fileURI)",
+          "parameters": [
+            {
+              "name": "fileURI",
+              "description": "존재 여부를 확인할 파일 또는 폴더의 file:/// URI입니다."
+            }
+          ],
           "detail": "exists()",
           "documentation": "Determines the existence of a file or folder.",
           "insertText": "exists()"
@@ -737,6 +766,13 @@
         {
           "name": "read",
           "kind": "Method",
+          "signature": "(fileURI)",
+          "parameters": [
+            {
+              "name": "fileURI",
+              "description": "읽을 파일의 file:/// URI입니다."
+            }
+          ],
           "detail": "read()",
           "documentation": "Reads the contents of a file.",
           "insertText": "read()"
@@ -765,6 +801,22 @@
         {
           "name": "write",
           "kind": "Method",
+          "signature": "(fileURI, text, mode?)",
+          "parameters": [
+            {
+              "name": "fileURI",
+              "description": "쓸 대상 파일의 file:/// URI입니다."
+            },
+            {
+              "name": "text",
+              "description": "기록할 문자열 내용입니다."
+            },
+            {
+              "name": "mode",
+              "description": "기록 모드입니다. 보통 append 여부 같은 동작을 제어합니다.",
+              "optional": true
+            }
+          ],
           "detail": "write()",
           "documentation": "Creates, writes to, or appends to a file.",
           "insertText": "write()"
@@ -1365,6 +1417,7 @@
         {
           "name": "getTimeline",
           "kind": "Method",
+          "signature": "()",
           "detail": "getTimeline()",
           "documentation": "Retrieves the current Timeline object in the document.",
           "insertText": "getTimeline()",

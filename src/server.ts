@@ -14,6 +14,7 @@ import ts from 'typescript';
 
 import log from "./log";
 import { provideCompletion } from './completion/completion';
+import { provideSignatureHelp } from './signatureHelp';
 
 type UnsupportedSyntaxRule = {
     code: string;
@@ -112,6 +113,10 @@ connection.onInitialize((): InitializeResult => {
                 triggerCharacters: ['.'],
                 resolveProvider: false
             },
+            signatureHelpProvider: {
+                triggerCharacters: ['(', ','],
+                retriggerCharacters: [','],
+            },
             textDocumentSync: TextDocumentSyncKind.Incremental,
         },
         serverInfo: {
@@ -136,6 +141,15 @@ connection.onCompletion((params) => {
     }
 
     return provideCompletion(document, params);
+});
+
+connection.onSignatureHelp((params) => {
+    const document = documents.get(params.textDocument.uri);
+    if (!document) {
+        return null;
+    }
+
+    return provideSignatureHelp(document, params);
 });
 
 connection.onExit(() => {

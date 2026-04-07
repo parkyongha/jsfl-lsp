@@ -7,11 +7,23 @@ import type { CompletionItemKind } from 'vscode-languageserver/node';
 export type JsflTypeName = string;
 
 /**
+ * 함수 인자 정의입니다.
+ */
+export interface JsflParameterInfo {
+	name: string;
+	description?: string;
+	optional?: boolean;
+	rest?: boolean;
+}
+
+/**
  * 자동완성에 노출할 공통 심볼 정의입니다.
  */
 export interface JsflSymbolDefinition {
 	name: string;
 	kind: CompletionItemKind;
+	signature?: string;
+	parameters?: readonly JsflParameterInfo[];
 	detail?: string;
 	documentation?: string;
 	insertText?: string;
@@ -74,6 +86,8 @@ export type JsflCompletionKindName =
 export interface JsflRawSymbolDefinition {
 	name: string;
 	kind: JsflCompletionKindName;
+	signature?: string;
+	parameters?: readonly JsflParameterInfo[];
 	detail?: string;
 	documentation?: string;
 	insertText?: string;
